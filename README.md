@@ -1,58 +1,79 @@
-# Chapter 1. Setup Environment React Native
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-## Mobile Application Development, Semester 2, Tahun Akademik 2023/2024
+# Getting Started
 
-## #Exercise 01
+>**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-Pada Chapter ini kita akan melakukan instalasi [react native]. Pada latihan ini anda diminta untuk menginstall React Native CLI (Bukan Expo) dilaptop/PC masing-masing, dimana langkah-langkahnya adalah sebagai berikut:
+## Step 1: Start the Metro Server
 
-- Install Node, JDK
-- Install Android Studio & SDK
-- Konfigurasi tambahan (khusus yang menggunakan processor [AMD])
-- Configure the ANDROID_HOME environment variable & Add platform-tools to Path
-- Install Android Emulator (optional - bisa dilewati jika anda ingin menjalankan aplikasi langsung dari hp. Baca dokumentasi [running on device])
-- Create project React Native menggunakan npx
-- Run project
+First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-## Status Instalasi
+To start Metro, run the following command from the _root_ of your React Native project:
 
-| Langkah-langkah                           | Status | Versi |
-| ----------------------------------------- | ------ | ----- |
-| Instalasi Node                            |        |       |
-| Instalasi JDK                             |        |       |
-| Android Studio                            |        |       |
-| SDK                                       |        |       |
-| ANDROID_HOME & Add platform-tools to Path |        | -     |
-| Android Emulator (opt)                    |        | -     |
-| Create Project RN using npx               |        | -     |
-| Run Project on Emulator / Device          |        | -     |
+```bash
+# using npm
+npm start
 
-Silahkan update status instalasi anda, apabila sudah terinstall silahkan isi versinya:
-untuk mengetahui versi node ketik dari cmd (node -v) untuk mengetahui versi JDK ketik dari cmd (java --version).
-Sebagai contoh :
+# OR using Yarn
+yarn start
+```
 
-| Langkah-langkah                           | Status | Versi                       |
-| ----------------------------------------- | ------ | --------------------------- |
-| Node                                      | Done   | 12.13.1                     |
-| JDK                                       | Done   | [openjdk 11.0.5 2019-10-15] |
-| Android Studio                            | Done   | 4.0                         |
-| SDK                                       | Done   | 29                          |
-| ANDROID_HOME & Add platform-tools to Path | Done   | -                           |
-| Android Emulator (opt)                    | Done   | pixel 2 xl api 29           |
-| Create Project RN using npx               | Done   | -                           |
-| Run Project on Emulator / Device          | Done   | -                           |
+## Step 2: Start your Application
 
-## Langkah-langkah Pengumpulan Latihan
+Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-- Fork project github ini. Ada terdapat 3 branch yaitu: master, parallel-a, parallel-b, parallel-c
-- Cloning repository hasil forking ke local laptop/PC.
-- Dari local laptop/PC anda buat branch baru dengan nama sesuai dengan nama diikuti oleh nim. contoh: johndoe_105022110001. Dan masuk ke dalam branch tersebut
-- Duplicate file README.md dan rename file tersebut sama seperti nama branch. contoh: johndoe_105022110001.md 
-- Edit baru tersebut dengan mengisi status instalasi pada tabel yang sudah disediakan.
-- git add dan commit dengan commit message "adding johndoe_105022110001.md" dan git push ke branch yang baru dibuat
-- lakukan pull request ke dalam branch sesuai dengan parallel kelas anda. (Bukan Branch Master)
+### For Android
 
-  [react native]: https://reactnative.dev/docs/environment-setup
-  [running on device]: https://reactnative.dev/docs/running-on-device
-  [amd]: https://android-developers.googleblog.com/2018/07/android-emulator-amd-processor-hyper-v.html
-  [openjdk 11.0.5 2019-10-15]: https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html
+```bash
+# using npm
+npm run android
+
+# OR using Yarn
+yarn android
+```
+
+### For iOS
+
+```bash
+# using npm
+npm run ios
+
+# OR using Yarn
+yarn ios
+```
+
+If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+
+This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+
+## Step 3: Modifying your App
+
+Now that you have successfully run the app, let's modify it.
+
+1. Open `App.tsx` in your text editor of choice and edit some lines.
+2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+
+   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+
+## Congratulations! :tada:
+
+You've successfully run and modified your React Native App. :partying_face:
+
+### Now what?
+
+- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
+- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+
+# Troubleshooting
+
+If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+
+# Learn More
+
+To learn more about React Native, take a look at the following resources:
+
+- [React Native Website](https://reactnative.dev) - learn more about React Native.
+- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
+- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
+- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
